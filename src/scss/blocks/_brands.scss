@@ -1,0 +1,111 @@
+.brands {
+  min-width: 320px;
+  margin-top: 14px;
+
+  &__container {
+
+    &--hidden {
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+  }
+
+  &__grid {
+    /* display: none; */
+
+    @media (min-width: $screen-md) {
+      display: grid;
+      grid-template-columns: 224px 224px 224px;
+      gap: 16px 24px;
+      margin: 24px auto 24px 24px;
+      overflow: hidden;
+      height: 162px;
+      transition: height 0.1s;
+
+      &--show {
+        overflow: visible;
+        height: 336px;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      grid-template-columns: repeat(4, 240px);
+      gap: 16px 32px;
+      margin: 24px auto 24px 24px;
+      overflow: hidden;
+      height: 162px;
+
+      &--show {
+        overflow: visible;
+        height: 248px;
+      }
+    }
+
+  }
+
+  &__header {
+    background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
+  }
+
+  &__title {
+    display: block;
+    font-size: $font-size-m;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: $letter-spacing-main;
+    color: $text-color-title;
+    text-transform: uppercase;
+    padding: 16px;
+
+    @media (min-width: $screen-md) {
+      padding-left: 24px;
+      margin-top: 30px;
+    }
+  }
+
+  &__price-description {
+    font-size: $font-size-s;
+    line-height: 20px;
+    letter-spacing: $letter-spacing-main;
+    margin-top: 6px;
+    padding: 0 16px;
+
+    @media (min-width: $screen-md) {
+      width: 430px;
+      margin-left: 24px;
+      padding: 0;
+    }
+  }
+}
+
+.repair-grid {
+  @media (min-width: $screen-md) {
+    display: grid;
+    grid-template-columns: 224px 224px 224px;
+    gap: 100px 24px;
+    margin: 24px auto 24px 24px;
+    overflow: hidden;
+    height: 162px;
+    transition: height 0.1s;
+
+    &--show {
+      overflow: visible;
+      gap: 16px 24px;
+      height: 510px;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    grid-template-columns: repeat(4, 240px);
+    gap: 100px 32px;
+    margin: 24px auto 24px 24px;
+    height: 162px;
+
+    &--show {
+      overflow: visible;
+      height: 330px;
+      gap: 16px 32px;
+    }
+  }
+}

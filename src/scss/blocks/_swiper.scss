@@ -1,0 +1,140 @@
+.swiper {
+  min-width: 320px;
+  min-height: 120px;
+
+  &__gradient {
+    width: 24px;
+    height: 100%;
+    background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    position: absolute;
+    right: 0;
+    z-index: 10;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &-wrapper {
+    position: relative;
+  }
+
+  &-slide {
+    min-height: 72px;
+  }
+}
+
+.swiper-slide {
+  min-height: 72px;
+
+  &__btn {
+    background-image: url(./../img/brand_btn.svg);
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    transition: all .2s;
+
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      transform: scale(1.05);
+    }
+
+    &--bottom {
+      align-self: flex-end;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    align-self: flex-start;
+    margin: 16px 0;
+
+    &--title {
+      font-weight: 400;
+      margin: 0;
+      padding: 16px 0 4px;
+      color: $text-color-title;
+
+    }
+
+    &--description {
+      position: relative;
+      font-weight: 400;
+      letter-spacing: $letter-spacing-big;
+      margin: 0;
+      padding-top: 5px;
+      line-height: 18px;
+      padding-top: 2px;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 72px;
+    margin: 16px 0;
+    margin-left: 16px;
+    padding: 0 16px;
+    background-color: #fff;
+    border-radius: 6px;
+
+    @media (min-width: $screen-md) {
+      width: 224px;
+      margin: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 240px;
+      margin: 0;
+    }
+
+    &--high {
+      height: 160px;
+    }
+
+    &--ultrahigh {
+      display: block;
+      width: 260px;
+      min-height: 200px;
+      margin-left: 8px;
+      flex-direction: column;
+      font-size: $font-size-s;
+    }
+  }
+
+  &__container--first {
+    margin-left: 16px;
+  }
+}
+
+/* pagination */
+.swiper-pagination {
+  position: relative;
+  margin-top: 6px;
+
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #dddddd;
+}
+
+.swiper-pagination-bullet-active {
+  background: #b5b6bc;
+}
+
+div.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px;
+}
+
+
+

@@ -1,0 +1,34 @@
+.modal {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  min-width: 320px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+  flex-direction: column;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  @media (min-width: 440px) {
+    width: 440px;
+    position: fixed;
+  }
+
+  @media (min-width: $screen-xl) {
+    width: 440px;
+    min-height: 100%;
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+  }
+
+  &--show {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity .2s;
+    display: flex;
+  }
+}

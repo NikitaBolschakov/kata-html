@@ -1,0 +1,30 @@
+.get-offer {
+  position: relative;
+  display: block;
+  font-size: $font-size-m;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: $letter-spacing-main;
+  text-align: left;
+  width: 192px;
+  margin: 16px auto 40px 16px;
+  transition: all .3s;
+
+  @media (min-width: $screen-md) {
+    width: 316px;
+    margin-left: 24px;
+  }
+
+  &::after {
+    content: "";
+    background: url("./../img/arroy-right.svg") no-repeat;
+    width: 24px;
+    height: 28px;
+    position: absolute;
+    bottom: -2px;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}

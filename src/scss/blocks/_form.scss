@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    margin: 0 16px 16px 16px;
+    height: 48px;
+    padding-left: 16px;
+
+    @media (min-width: $screen-md) {
+      margin: 0 32px 16px 32px;
+    }
+
+    &::placeholder {
+      font-family: TT Lakes;
+      font-size: $font-size-m;
+      line-height: 24px;
+      letter-spacing: $letter-spacing-main;
+      text-align: left;
+      color: $color-placeholder;
+    }
+  }
+
+  &__textarea {
+    min-height: 118px;
+    padding-top: 12px;
+  }
+
+  &__text {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: $font-size-s;
+    line-height: 16px;
+    color: $text-color-title;
+
+    @media (min-width: $screen-md) {
+      margin: 0 32px 24px 32px;
+    }
+  }
+
+  &__link {
+    color: $color-buttons;
+  }
+}

@@ -1,0 +1,50 @@
+.footer {
+  margin: 64px 16px;
+  color: $text-color-title;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 24px;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 32px 20px;
+  }
+
+  &__text {
+    font-size: $font-size-s;
+    line-height: 16px;
+    text-align: center;
+    padding-bottom: 16px;
+
+    &:first-of-type {
+      @media (min-width: $screen-md) {
+        text-align: left;
+      }
+    }
+
+    &:last-of-type {
+      @media (min-width: $screen-md) {
+        width: 213px;
+        text-align: right;
+      }
+    }
+  }
+
+  &__link {
+    font-size: $font-size-s;
+    line-height: 16px;
+    text-align: center;
+    padding-bottom: 16px;
+    display: block;
+    text-align: center;
+    transition: all .2s;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
