@@ -278,7 +278,7 @@ div.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
   @media (min-width: 768px) {
     .header {
       padding: 0 24px; } }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     .header {
       display: none; } }
   .header__burger-container {
@@ -325,7 +325,7 @@ div.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
     @media (min-width: 768px) {
       .main__text-wrapper {
         margin: 0; } }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     .main__title-container {
       display: flex;
       justify-content: space-between;
@@ -353,7 +353,7 @@ div.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
       background-color: #41f6d7; }
   .main__title-list {
     display: none; }
-    @media (min-width: 1120px) {
+    @media (min-width: 1366px) {
       .main__title-list {
         display: flex;
         justify-content: space-between;
@@ -417,7 +417,7 @@ div.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
       .main__list {
         flex-wrap: wrap;
         margin: 8px 24px;
-        min-height: 74px; } }
+        min-height: 79px; } }
   .main__link {
     white-space: nowrap;
     padding: 8px 16px;
@@ -523,7 +523,7 @@ div.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
     .sidebar {
       width: 320px;
       position: fixed; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1366px) {
     .sidebar {
       width: 320px;
       min-height: 100%;
@@ -531,7 +531,9 @@ div.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
       flex-direction: column;
       box-shadow: none;
       position: fixed;
-      top: 0; } }
+      top: 0;
+      visibility: visible;
+      opacity: 1; } }
   .sidebar__header {
     display: flex;
     align-items: center;
@@ -944,11 +946,18 @@ div.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
   .price__text--column-1 {
     padding-left: 16px; }
 
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
   .page-wrapper {
     position: absolute;
     left: 320px;
     margin: 0 auto; } }
+
+@media (min-width: 1440px) {
+  .page-wrapper {
+    position: relative;
+    max-width: 1120px;
+    left: calc(38% - 225px);
+    margin: 0; } }
 
 .modal {
   position: absolute;
