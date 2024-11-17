@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 1.25,
     breakpoints: {
       320: {
-        slidesPerView: 1.15
+        slidesPerView: 1.25
       },
       425: {
         slidesPerView: 1.6
@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 1.25,
     breakpoints: {
       320: {
-        slidesPerView: 1.15
+        slidesPerView: 1.25
       },
       425: {
         slidesPerView: 1.6
@@ -112,7 +112,7 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 /* buttons show-more */
-const readMoreBtn = document.querySelector('.main__read-more') 
+const readMoreBtn = document.querySelector('.main__read-more')
 const introText = document.querySelector('.main__text-box')
 
 const showAllBtn = document.querySelector('#brands')

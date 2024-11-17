@@ -1,7 +1,14 @@
 .page-wrapper {
-  @media (min-width: $screen-xl) {
+  @media (min-width: $screen-desktop) {
     position: absolute;
     left: 320px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $screen-xl) {
+    position: relative;
+    max-width: 1120px;
+    left: calc(38% - 225px);
+    margin: 0;
   }
 }

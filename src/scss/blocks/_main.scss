@@ -19,7 +19,7 @@
   }
 
   &__title-container {
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-desktop) {
       display: flex;
       justify-content: space-between;
       padding-top: 24px;
@@ -55,7 +55,7 @@
   &__title-list {
     display: none;
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-desktop) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -139,7 +139,7 @@
     @media (min-width: $screen-lg) {
       flex-wrap: wrap;
       margin: 8px 24px;
-      min-height: 74px;
+      min-height: 79px;
     }
   }
 

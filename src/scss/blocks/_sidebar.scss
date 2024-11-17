@@ -30,7 +30,7 @@
     position: fixed;
   }
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: $screen-desktop) {
     width: 320px;
     min-height: 100%;
     display: flex;
@@ -38,6 +38,8 @@
     box-shadow: none;
     position: fixed;
     top: 0;
+    visibility: visible;
+    opacity: 1;
   }
 
   &__header {
